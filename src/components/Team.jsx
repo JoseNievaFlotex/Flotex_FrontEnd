@@ -1,4 +1,5 @@
 import { Row } from "react-bootstrap"
+import React from 'react'
 
 export const Team = (props) => {
   return (

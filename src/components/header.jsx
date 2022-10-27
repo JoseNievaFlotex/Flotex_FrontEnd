@@ -4,6 +4,7 @@ import { Features } from "./features"
 import { Gallery } from "./gallery"
 import { Services } from "./services"
 import { Testimonials } from "./testimonials"
+import React from 'react'
 
 export const Header = (props) => {
   return (

@@ -1,9 +1,6 @@
 
 import React, { useState } from 'react';
 
-import Form from 'react-bootstrap/Form';
-import Modal from 'react-bootstrap/Modal';
-import { Button, Container, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import {MDBBtn,
   MDBContainer,
@@ -12,15 +9,11 @@ import {MDBBtn,
   MDBCardImage,
   MDBRow,
   MDBCol,
-  MDBIcon,
   MDBInput } from 'mdb-react-ui-kit';
 
 export default function Login() {
 
-    const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  
   return (
     
     <React.Fragment>

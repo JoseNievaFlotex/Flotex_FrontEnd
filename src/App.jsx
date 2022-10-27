@@ -10,6 +10,9 @@ import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
+import React from 'react'
+import ReactDOM from 'react-dom'
+
 //Router
 import {  BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
