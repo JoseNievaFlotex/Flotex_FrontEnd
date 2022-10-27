@@ -12,7 +12,7 @@ import { Services } from './services'
 import { Team } from './Team'
 import { Testimonials } from './testimonials'
 
-export default function NavPages({}) {
+export default function NavPages() {
 
   return (
     <React.Fragment>
