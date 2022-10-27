@@ -112,6 +112,31 @@ code {
 
 
 
+@media (max-width: 1929px){
+  #flotex-home-css{
+    margin: 0 340px 0 160px !important;
+  }
+  
+}
+
+@media (max-width: 1680px){
+  #flotex-home-css{
+    margin: 0 88px 0 88px !important;
+    
+  }
+  #nav-a-flotex{
+    font-size: 15px;
+  }
+
+  .bg-nav-flotex::after{
+    width: 90px !important;
+  }
+  #flotex-nav-id a{
+    width: 90px;
+  }
+  
+}
+
 @media (max-width: 1260px){
 
   #flotex-nav-id{
@@ -122,6 +147,13 @@ code {
   #flotex-nav-id a{
     
     width: 110px;
+  }
+  #nav-a-flotex{
+    font-size: 12px !important;
+  }
+  #flotex-home-css{
+    margin: 0 25px 0 25px !important;
+    font-size: 20px;
   }
 }
 

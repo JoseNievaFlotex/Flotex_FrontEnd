@@ -5,7 +5,7 @@ export const Navigation = (props) => {
   const normalLink = "";
   return (
     <nav id="menu" className="row navbar navbar-default navbar-fixed-top">
-      <div className="row container-nav-flotex" id="flotex-nav-id">
+      <div className="container container-nav-flotex" id="flotex-nav-id">
         <div
           className="collapse navbar-collapse"
           id="bs-example-navbar-collapse-1"
@@ -93,7 +93,7 @@ export const Navigation = (props) => {
               Contacto
             </NavLink>
 
-            <NavLink to='/dolar' className={ ({ isActive }) => (isActive ? 'bg-nav-flotex' : normalLink )}>
+            <NavLink id="nav-a-flotex" to='/dolar' className={ ({ isActive }) => (isActive ? 'bg-nav-flotex' : normalLink )}>
               Dolar
             </NavLink>
             {/* <NavLink to='/piso' className={ ({ isActive }) => (isActive ? 'bg-nav-flotex' : normalLink )}>
