@@ -1,13 +1,8 @@
-import {  BrowserRouter as Router, Route, Routes, NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React from 'react'
 
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 
 export const Navigation = (props) => {
-
-  const activeLink = { color: "blue"};
   const normalLink = "";
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
@@ -57,12 +52,12 @@ export const Navigation = (props) => {
             </NavLink>
             
 
-            <NavLink to='/dolar' className={ ({ isActive }) => (isActive ? 'bg-nav-flotex' : normalLink )}>
+            {/* <NavLink to='/dolar' className={ ({ isActive }) => (isActive ? 'bg-nav-flotex' : normalLink )}>
               Dolar
             </NavLink>
             <NavLink to='/piso' className={ ({ isActive }) => (isActive ? 'bg-nav-flotex' : normalLink )}>
               Piso
-            </NavLink>
+            </NavLink> */}
 
             <NavLink to='/login' onClick={"modalFlotex"} id='nav-a-flotex' className={ ({ isActive }) => (isActive ? 'bg-nav-flotex' : normalLink )   }>
             {/* // to='/login' onClick={"modalFlotex"} className={ ({ isActive }) => (isActive ? 'bg-nav-flotex' : normalLink ) }> */}

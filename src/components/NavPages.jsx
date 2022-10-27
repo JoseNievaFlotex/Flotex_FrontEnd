@@ -1,8 +1,8 @@
 import React from 'react'
 import { Routes, Route} from "react-router-dom"
-import {Dolar} from '../pages/Dolar'
+
 import Login from '../pages/Login'
-import Piso from '../pages/Piso'
+
 import { About } from './about'
 import { Contact } from './contact'
 import { Features } from './features'
@@ -27,8 +27,8 @@ export default function NavPages() {
                 <Route path='/testimonials' element={<Testimonials/>}/>
                 <Route path='/team' element={<Team/>}/>
                 <Route path='/contact' element={<Contact/>}/>
-                <Route path='/dolar' element={<Dolar/>}/>
-                <Route path='/piso' element={<Piso/>}/>
+                {/* <Route path='/dolar' element={<Dolar/>}/>
+                <Route path='/piso' element={<Piso/>}/> */}
                 <Route path='/login' element={<Login/>}/>
             </Routes>
         </section>

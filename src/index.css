@@ -106,8 +106,33 @@ code {
 }
 /*FIN*/
 
-.row.g-0.radius-login-flotex{
-  --bs-gutter-y: 0;
+
+
+
+
+@media (max-width: 1260px){
+
+  #flotex-nav-id{
+    justify-content: center;
+    max-width: 1050px;
+  }
+
+  #flotex-nav-id a{
+    
+    width: 110px;
+  }
+}
+
+@media (max-width: 1000px){
+
+  #flotex-nav-id a{
+    font-size: 15px;
+    width: 100px;
+  }
+
+  .bg-nav-flotex::after{
+    width: 100px !important;
+  }
 }
 @media (max-width: 600px){
   .direction-contact-flotex {
