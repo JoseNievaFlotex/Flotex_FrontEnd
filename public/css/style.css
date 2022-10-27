@@ -74,9 +74,10 @@ hr {
 #menu {
   padding: 15px;
   transition: all 0.8s;
+  margin-bottom: 0;
 }
 #menu.navbar-default {
-  background-color: #fff;
+  background-color: transparent;
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
@@ -208,12 +209,14 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  background: url(../img/banner-1.png) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+
+  margin-top: -71px;
 }
 .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
@@ -240,9 +243,8 @@ a:focus,
   margin-bottom: 60px;
 }
 header .intro-text {
-  padding-top: 350px;
-  padding-bottom: 200px;
   text-align: center;
+  padding: 200px 0;
 }
 /* Features Section */
 #features {
@@ -602,5 +604,9 @@ label {
 @media (max-width: 768px) {
   #about img {
     margin: 50px 0;
+  }
+
+  #team {
+    margin: 100px 0;
   }
 }

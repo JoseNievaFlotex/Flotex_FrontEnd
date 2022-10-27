@@ -6,22 +6,79 @@ export const Testimonials = (props) => {
           <h2>What our clients say</h2>
         </div>
         <div className='row'>
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className='col-md-4'>
+          
+                <div className='col-md-4'>
                   <div className='testimonial'>
                     <div className='testimonial-image'>
-                      {' '}
-                      <img src={d.img} alt='' />{' '}
+
+                      <img src='img/testimonials/01.jpg' alt='' />
                     </div>
                     <div className='testimonial-content'>
-                      <p>"{d.text}"</p>
-                      <div className='testimonial-meta'> - {d.name} </div>
+                      <p>""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
+                      <div className='testimonial-meta'> - John Doe </div>
                     </div>
                   </div>
                 </div>
-              ))
-            : 'loading'}
+                <div className='col-md-4'>
+                  <div className='testimonial'>
+                    <div className='testimonial-image'>
+
+                      <img src='img/testimonials/02.jpg' alt='' />
+                    </div>
+                    <div className='testimonial-content'>
+                      <p>""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
+                      <div className='testimonial-meta'> - Johnathan Doe </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-md-4'>
+                  <div className='testimonial'>
+                    <div className='testimonial-image'>
+
+                      <img src='img/testimonials/03.jpg' alt='' />
+                    </div>
+                    <div className='testimonial-content'>
+                      <p>""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
+                      <div className='testimonial-meta'> - Jose Doe </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-md-4'>
+                  <div className='testimonial'>
+                    <div className='testimonial-image'>
+
+                      <img src='img/testimonials/04.jpg' alt='' />
+                    </div>
+                    <div className='testimonial-content'>
+                      <p>""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
+                      <div className='testimonial-meta'> - John Doe </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-md-4'>
+                  <div className='testimonial'>
+                    <div className='testimonial-image'>
+
+                      <img src='img/testimonials/05.jpg' alt='' />
+                    </div>
+                    <div className='testimonial-content'>
+                      <p>""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
+                      <div className='testimonial-meta'> - John Doe </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-md-4'>
+                  <div className='testimonial'>
+                    <div className='testimonial-image'>
+
+                      <img src='img/testimonials/06.jpg' alt='' />
+                    </div>
+                    <div className='testimonial-content'>
+                      <p>""Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
+                      <div className='testimonial-meta'> - John Doe </div>
+                    </div>
+                  </div>
+                </div>
         </div>
       </div>
     </div>
