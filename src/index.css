@@ -22,9 +22,10 @@ code {
 
 .bg-nav-flotex{
   background-color: transparent;
-  color: black;
-  
-  
+  color: black;  
+}
+#flotex-home-css{
+  margin: 0 590px 0 160px !important;
 }
 .bg-nav-flotex::after{
   content: " ";
@@ -41,6 +42,7 @@ code {
 .menu-navbar-flotex{
   display: flex;
   flex-direction: initial !important;
+  justify-content: space-between !important;
 }
 
 #bs-example-navbar-collapse-1{

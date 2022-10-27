@@ -10,17 +10,16 @@ import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
 //Router
-import {  BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./App.css";
 import { Dolar } from "./pages/Dolar";
 import Piso from "./pages/Piso";
 import MainPage from "./components/MainPage";
-
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -37,7 +36,7 @@ const App = () => {
     <div className="ayrton">
       {/* <Navigation /> */}
       {/* <Header data={landingPageData.Header} /> */}
-      
+
       {/* <Features data={landingPageData.Features} />
       <About data={landingPageData.About} />
       <Services data={landingPageData.Services} />
@@ -47,18 +46,15 @@ const App = () => {
       <Contact/> */}
 
       <Router className="ayrton2">
-        <MainPage/>
+        <MainPage />
       </Router>
-      
 
-      
-      
       <div>
-        <div id='footer' className="footer-flotex">
-          <div className='container text-center'>
+        <div id="footer" className="footer-flotex">
+          <div className="container text-center">
             <p>
-              &copy; 2020 Issaaf Kattan React Land Page Template. Design by{' '}
-              <a href='http://www.templatewire.com' rel='nofollow'>
+              &copy; 2020 Issaaf Kattan React Land Page Template. Design by{" "}
+              <a href="http://www.templatewire.com" rel="nofollow">
                 TemplateWire
               </a>
             </p>
