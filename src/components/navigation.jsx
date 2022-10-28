@@ -1,8 +1,20 @@
 import { NavLink } from "react-router-dom";
-import React from "react";
+import React, { useState }  from "react";
 
-export const Navigation = (props) => {
+//NavBar
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Row } from "react-bootstrap";
+
+export const Navigation = () => {
   const normalLink = "";
+
+
   return (
     <nav id="menu" className="row navbar navbar-default navbar-fixed-top">
       <div className="container container-nav-flotex" id="flotex-nav-id">
@@ -113,7 +125,65 @@ export const Navigation = (props) => {
             </NavLink>
           </ul>
         </div>
+
+        <Container className="nav-responsive-flotex"  >
+          <Row>
+          {[false].map((expand) => ( 
+            <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+              <Container fluid>
+                <Navbar.Brand href="#">FLOTEX</Navbar.Brand>
+                <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+                <Navbar.Offcanvas
+                  id={`offcanvasNavbar-expand-${expand}`}
+                  aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+                  placement="end"
+                >
+                  <Offcanvas.Header closeButton>
+                    <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                      MENU
+                    </Offcanvas.Title>
+                  </Offcanvas.Header>
+                  <Offcanvas.Body>
+                    <Nav className="justify-content-end flex-grow-1 pe-3">
+                      <NavLink
+                        to="/header"
+                      >Home
+                      </NavLink>
+                      <NavLink
+                        to="/features"
+                      >Feactures
+                      </NavLink>
+                      <NavLink
+                        to="/about"
+                      >About
+                      </NavLink>
+                      <NavLink
+                        to="/services"
+                      >Services
+                      </NavLink>
+                      <NavLink
+                        to="/gallery"
+                      >Gallery
+                      </NavLink>
+                      <NavLink
+                        to="/team"
+                      >Team
+                      </NavLink>
+                      <NavLink
+                        to="/login"
+                      >Intranet
+                      </NavLink>
+                    </Nav>
+                  </Offcanvas.Body>
+                </Navbar.Offcanvas>
+              </Container>
+            </Navbar>
+            ))}
+          </Row>
+        </Container>
       </div>
     </nav>
   );
+
 };
+
