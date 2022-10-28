@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import React, { useState }  from "react";
-
+import  Image  from "react-bootstrap/Image";
 //NavBar
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -30,7 +30,8 @@ export const Navigation = () => {
                 isActive ? "bg-nav-flotex" : normalLink
               }
             >
-              FLOTEX
+              <Image src="img/logo.png" className="col-sm-12"
+                />
             </NavLink>
 
             <NavLink
@@ -131,7 +132,10 @@ export const Navigation = () => {
           {[false].map((expand) => ( 
             <Navbar key={expand} bg="light" expand={expand} className="mb-3">
               <Container fluid>
-                <Navbar.Brand href="#">FLOTEX</Navbar.Brand>
+                <Navbar.Brand href="#">
+                <Image src="img/logo.png" className="col-sm-12"
+                />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                 <Navbar.Offcanvas
                   id={`offcanvasNavbar-expand-${expand}`}
