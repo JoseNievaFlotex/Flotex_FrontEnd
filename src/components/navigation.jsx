@@ -1,13 +1,10 @@
 import { NavLink } from "react-router-dom";
-import React, { useState }  from "react";
+import React  from "react";
 import  Image  from "react-bootstrap/Image";
 //NavBar
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Row } from "react-bootstrap";
 
@@ -30,8 +27,11 @@ export const Navigation = () => {
                 isActive ? "bg-nav-flotex" : normalLink
               }
             >
-              <Image src="img/logo.png" className="col-sm-12"
+              <Row >
+              <Image src="img/logo.png" 
                 />
+
+              </Row>
             </NavLink>
 
             <NavLink
@@ -133,8 +133,11 @@ export const Navigation = () => {
             <Navbar key={expand} bg="light" expand={expand} className="mb-3">
               <Container fluid>
                 <Navbar.Brand href="#">
-                <Image src="img/logo.png" className="col-sm-12"
-                />
+                  <Row className=" col-md-12 col-lg-12 col-sm-12 ">
+                <Image src="img/logo.png"  
+/>
+
+                  </Row>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                 <Navbar.Offcanvas
